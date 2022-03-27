@@ -2,3 +2,20 @@
   text-align: left;
   align-items: left;
 }
+
+#img-profile {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+#img-contact {
+  width: auto;
+}
+
+.input-padrao {
+  display: block;
+  margin: 0 0 20;
+  padding: 10px 25px;
+  width: 50%;
+}
