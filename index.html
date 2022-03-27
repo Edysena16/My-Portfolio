@@ -16,11 +16,11 @@
       </div>
       <nav>
         <ul>
-          <li>Sobre mim</li>
-          <li>Skill</li>
-          <li>Hobbies</li>
-          <li>Formação</li>
-          <li>Projetos</li>
+          <li><a href="#sobre-mim" title="sobre mim">Sobre mim</a></li>
+          <li><a href="#skills" title="skills">Skill</a></li>
+          <li><a href="#hobbies" title="hobbies">Hobbies</a></li>
+          <li><a href="#formacao" title="formacao">Formação</a></li>
+          <li><a href="#projetos" title="projetos">Projetos</a></li>
           <li>edvaldofutsena@hotmail.com</li>
         </ul>
       </nav>
@@ -28,8 +28,8 @@
         <h1>Olá, meu nome é Edvaldo Sena e construo páginas web</h1>
         <img src="" alt="profile" />
         <p>
-          Eu sou estudante de ciencia da computacação na Unisul e Atualmente
-          estou participando do projeto ONE na Alura.
+          Eu sou estudante de ciência da computacação, estou no 3º semestre e
+          Atualmente estou participando do projeto ONE na Alura.
         </p>
         <ul class="links-perfil">
           <li>Github</li>
@@ -40,7 +40,7 @@
       </div>
     </header>
     <main>
-      <section id="Sobre-mim">
+      <section id="sobre-mim">
         <div>
           <h1>Sobre mim</h1>
           <p>
@@ -59,7 +59,7 @@
           <img src="" alt="" />
         </div>
       </section>
-      <section id="Skills">
+      <section id="skills">
         <h2>Skills</h2>
         <ul>
           <li>
@@ -88,7 +88,7 @@
           </li>
         </ul>
       </section>
-      <section id="Hobbies">
+      <section id="hobbies">
         <h2>Hobbies</h2>
         <ul>
           <li>
@@ -117,14 +117,14 @@
           </li>
         </ul>
       </section>
-      <section id="Formação">
+      <section id="formacao">
         <h2>Formação acadêmica</h2>
         <img src="" alt="" />
         <p>Alura</p>
         <p>ONE</p>
         <p>Cursos</p>
       </section>
-      <section id="Projetos">
+      <section id="projetos">
         <h2>Meus Projetos</h2>
         <div>
           <img src="" alt="" />
@@ -139,29 +139,40 @@
           <p>linkDemo</p>
         </div>
       </section>
-    </main>
-    <footer>
-      <div>
-        <img src="" alt="" />
-        <h3>Contato</h3>
+      <section id="contatos">
+        
+        <div>
+          <img src="" alt="" />
+          <h2>Contato</h2>
         <p>Quer entrar em contato comigo</p>
         <p>
           Preencha o formulário ao lado e entrarei em contato o mais rápido
           possivel.
         </p>
-        <form action="Contato">
-          <input type="text" id="nome" />
-          <input type="email" id="email" />
-          <input type="text" id="assunto" />
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+        <form>
+          <label for="nome"
+            ><input type="text" name="contato" value="nome" id="nome"
+          /></label>
+          <label for="email"><input type="email" id="email" /></label>
+          <label for="assunto"><input type="text" id="assunto" /></label>
+          <label for="campo">
+            <textarea name="" id="campo" cols="30" rows="10"></textarea>
+          </label>
+
           <button><input type="submit" /></button>
         </form>
-      </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
       <p>Desenvolvido por Edvaldo Sena</p>
       <p>&copy;copiright Scearth</p>
     </footer>
-    <script>
-      console.log('&nbsp;')
+    
+    <script src="script.js">
     </script>
+        
+      </div>
   </body>
 </html>
