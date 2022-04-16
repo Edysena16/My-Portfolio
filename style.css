@@ -18,6 +18,11 @@ header {
   min-height: 100vh;
 }
 
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
 .box {
   position: relative;
   width: 1136px;
@@ -42,10 +47,13 @@ header {
 
 }
 
+
 /* Title-with-logo */
 .logo {
-  display: inline-block;
-  flex-direction: column;
+  display: inline;
+  flex-direction: row;
+  width: 134px;
+  height: auto;
   margin-left: 15px;
 }
 
@@ -151,10 +159,7 @@ p.apresentacao {
 /* TAGS GLOBAIS*/
 
 
-h2 {
-  text-align: center;
-  font-size: 30px;
-}
+
 
 
 
@@ -262,7 +267,7 @@ h2 {
 }
 
 .container-hobbies {
-  background-color: #226eda;
+  background-color: #226fda27;
   width: 100%;
   display: block;
   align-items: center;
@@ -281,6 +286,7 @@ margin-top: auto;
 }
 
 .box-itens {
+ 
   width: 150px;
   height: 150px;
   background-color: aqua;
@@ -288,15 +294,23 @@ margin-top: auto;
   box-shadow: 5px 5px 15px black;
 }
 
+.box-itens p {
+  text-align: center;
+  margin-top: 105px;
+
+}
+
 /* -------------------  FORMACAO --------------------- */
 
 
-#formacao{
-  background-color: #EAF2FD;
+#formacao, #projetos, #contatos{
+  background-color: #a442e6a9;
+  padding-top: 150px;
 }
 
 #contatos {
   background-color: #eaf2fd;
+  padding-top: 150px;
 }
 /* FOOTER */
 footer {
