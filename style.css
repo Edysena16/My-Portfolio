@@ -1,14 +1,12 @@
 * {
   margin: 0;
+  font-family: 'Releway';
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: 'Releway';
-}
 section {
   min-height: 100vh;
 }
