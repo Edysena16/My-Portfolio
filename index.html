@@ -15,9 +15,13 @@
       <div class="menu-topo ">
 
           <div class="logo">
-            <img src="img/sceart2.png" alt="logo" id="img-logo"/>
-            <spam>Edvaldo Sena</spam>
-          </div>
+            <div class="home-page">
+              <a href="#">
+                <img src="img/sceart2.png" alt="logo" id="img-logo"/>
+                <spam>Edvaldo Sena</spam>
+              </a>
+            </div>
+            </div>
           <nav id="navigation">
             <ul >
               <li><a href="#sobre-mim" title="sobre mim">Sobre mim</a></li>
@@ -36,25 +40,26 @@
             <div class="box-perfil">
               <h1 id="titulo-perfil">Olá, meu nome é Edvaldo Sena E construo páginas web</h1>
               <p class="apresentacao">
-                  Sou estudante do 3º Semestre de Ciência da Computacação - Unisul e
-                  atualmente estou participando do projeto Oracle ONE na Alura.
+                Sou estudante do 3º Semestre de Ciência da Computacação - Unisul
+              <br>
+                E atualmente estou participando do projeto Oracle ONE na Alura.
               </p>
               <ul class="lista-perfil">
                 <li class="perfil-links">
                   <a class="lista" href="https://github.com/Edysena16">Github</a>
-                  <img src="/img/Vector.png">
+                  <img src="/img/vector.png">
                 </li>
                 <li class="perfil-links">
                   <a class="lista" href="https://www.linkedin.com/in/edvaldosena16/">Linkedin</a>
-                  <img src="/img/Vector.png">
+                  <img src="/img/vector.png">
                 </li>
                 <li class="perfil-links">
                   <a class="lista" href="https://www.instagram.com/edvaldofutsena/">Instagram</a>
-                  <img src="/img/Vector.png">
+                  <img src="/img/vector.png">
                 </li>
                 <li class="perfil-links">
                   <a class="lista" href="https://drive.google.com/file/d/1k_nA4L3shxok3acR_jUqdQTt27uQ0byl/view?usp=sharing">Currriculo</a>
-                  <img src="/img/Vector.png">
+                  <img src="/img/vector.png">
                 </li>
               </ul>
                   
@@ -67,7 +72,7 @@
       
     </header>
     <main>
-      <section id="sobre-mim">
+      <section class="section" id="sobre-mim" class="box">
               <div class="box-sobre">
                 <h2>Sobre mim</h2>
                 <p>
@@ -85,7 +90,7 @@
                 <img src="img/Assinatura.png" alt="Assinatura" id="assinatura"/>
               </div>
       </section>
-      <section id="skills-hobbies">
+      <section class="section" id="skills-hobbies">
         
         <div class="container-hobbies">
           <div>
@@ -139,15 +144,32 @@
           </div>
         </div>
       </section>
-      <section id="formacao" >
+      <section class="section" id="formacao" >
+        <div>
           <h2 id="titulo-formacao">Formação acadêmica</h2>
-          <img src="img/AluraLogo.png" alt="" />
-          <img src="img/AluraLogo.png" alt="" />
-          <p>Alura</p>
-          <p>ONE</p>
-          <p>Cursos</p>
+          <div class="box-fomacao">
+            <div class="box-content">
+              <img src="img/AluraLogo.png" alt="" />
+              <h4>Descrição Curso</h4>
+              <p> title</p>
+              </p>
+            </div>
+            <div class="box-content">
+              <img src="img/AluraLogo.png" alt="" />
+              <h4>Descrição Curso</h4>
+              <p> title</p>
+            </div>
+            <div class="box-content">
+              <img src="img/AluraLogo.png" alt="" />
+              <h4>Descrição Curso</h4>
+              <p> title</p>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="projetos">
+      <section class="section" id="projetos">
+
+        <div class="box-experiencia">
           <h2>Meus Projetos</h2>
           <div class="caixa-projetos">
             <img src="img/Project/JogoDaForca.png" alt="JogoDaForca" class="imagem-projeto"/>
@@ -165,34 +187,49 @@
               <p>linkDemo</p>
             </div>
           </div>
-      </section>
-      <section id="contatos">
           
-          <div class="container">
+      </section>
+        </div>
+      <section class="section" id="contatos">
+          
+          <div class="box-contatos">
 
-            <div>
-              <h2>Contato</h2>
-              <div>
-                <img src="img/Contat/Contat.png" alt="Contato" id="img-contat" />
-              </div>
-              <p>Quer entrar em contato comigo</p>
-              <p>
-                Preencha o formulário ao lado e entrarei em contato o mais rápido
-                possivel.
-              </p>
-              <form>
-                <label for="nome"
-                  >Nome<input type="text" name="contato" id="nome" class="input-padrao"
-                /></label>
-                <label for="email">E-mail<input type="email" id="email" class="input-padrao"/></label>
-                <label for="assunto">Assunto<input type="text" id="assunto" class="input-padrao"/></label>
-                <label for="campo"> Deixe Sua Mensagem:
-                  <textarea name="" id="campo" cols="30" rows="10" class="input-padrao"></textarea>
-                </label>
-      
-                <input type="submit" value="Enviar Dados"/>
+            <div class="box-img">
+              <img src="img/call-me.png" alt="Contato" class="img-contat" />
+              <a href="https://www.pexels.com/pt-br/foto/cabine-telefonica-preta-e-cinza-2111759/">
+                Foto de Luis Quintero no Pexels
+              </a>
+                
             </div>
-          </form>
+
+            <div class="box-form">
+              <div class="topo">
+                <h2>Contato</h2>
+                <p>Quer entrar em contato comigo<br>
+                  Preencha o formulário ao lado e entrarei em contato o mais rápido
+                  possivel.
+                </p>
+              </div>
+              <div class="campo">
+                <form>
+                  <label for="nome"
+                    >Nome<input type="text" placeholder="Ex: Fulano de tal" id="nome" class="input-padrao"
+                  /></label>
+                  <label for="email">E-mail<input type="email" id="email" placeholder="Ex: seu.email@dominio.com" class="input-padrao"/></label>
+                  <label for="assunto">
+                    <input type="text" id="assunto" placeholder="Assunto" class="input-text"/>
+                  </label>
+    
+                  <label class="lbl-ta" for="mensagem">
+                    <textarea placeholder="Mensagem" id="campo" cols="250" rows="6" class="input-textarea"></textarea>
+                  </label>
+                </form>
+              </div>
+              
+              <button type="submit" class="botao">Enviar mensagem</button>
+            
+            </div>
+
           </div>
       </section>
     </main>

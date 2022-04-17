@@ -16,6 +16,7 @@ header {
   min-height: 100vh;
 }
 
+
 h2 {
   text-align: center;
   font-size: 30px;
@@ -40,7 +41,7 @@ h2 {
   width: 100%;
   height: auto;
   background-color: #eaf2fd;
-  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.486);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
   padding: 20px;
 
 }
@@ -55,6 +56,10 @@ h2 {
   margin-left: 15px;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
 /*TOPO MENU CONFIGURAÇÕES*/
 
 
@@ -62,7 +67,7 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: inherit;
-  margin-right: 15px;
+  margin-right: 25px;
 
   position: relative;
 }
@@ -70,21 +75,27 @@ h2 {
 nav ul li {
   display: inline;
   font-size: 1em;
-  font-weight: bold;
-  padding: 0 0 0 15px;
-  margin-right: 10px;
+  
+  padding: 0 0 0 5px;
+  margin-right: 5px;
 
 }
 
 nav ul li:hover {
-  text-shadow: 1px 1px 3px rgb(236, 17, 17);
+  text-shadow: 1px 1px 1px rgb(41, 38, 38);
+  
 
 }
 
 nav ul li a {
   text-decoration: none;
+  color: rgb(27, 72, 139);
 }
 
+nav ul li a:hover, .logo a:hover{
+  font-weight: 500;
+  color: rgb(24, 81, 204);
+}
 spam {
   position: static;
   width: 102px;
@@ -137,7 +148,8 @@ spam {
   left: 0;
   top: 61px;
 }
-/* Titulo Cabeçalho */
+/*   CONTEUDO DO PERFIL   */
+
 h1 {
   position: static;
   width: 751px;
@@ -154,45 +166,23 @@ p.apresentacao {
   margin: 15px 0;
 }
 
-/* TAGS GLOBAIS*/
-
-
-
-
-
-
-/*   CONTEUDO DO PERFIL   */
-
-
-
-
-
 .lista-perfil {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
 
-  position: static;
-  width: auto;
-  height: auto;
-  margin: 0;
-  
+}
+
+.perfil-links {
+padding: 15px 30px 0 0;
 }
 
 .lista {
   position: static;
   width: 50px;
   height: 19px;
-  left: 0px;
-  top: 2.5px;
-
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  padding: 0 0 0 10px;
+ text-decoration: none;
 }
 
 #img-profile {
@@ -227,7 +217,7 @@ p.apresentacao {
   align-items: flex-start;
   padding-top: 2em;
   position: static;
-  width: 1136px;
+  width: 80%;
   height: 300px;
   
 }
@@ -292,6 +282,7 @@ margin-top: auto;
   box-shadow: 5px 5px 15px black;
 }
 
+
 .box-itens p {
   text-align: center;
   margin-top: 105px;
@@ -301,18 +292,195 @@ margin-top: auto;
 /* -------------------  FORMACAO --------------------- */
 
 
-#formacao, #projetos, #contatos{
+.section {
   background-color: #a442e6a9;
   padding-top: 150px;
+
 }
 
+
+.box-fomacao {
+  background-color: rgba(71, 192, 40, 0.74);
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+ 
+ }
+
+.box-content {
+  width: 368px;
+  height: 347px;
+  background-color: aquamarine;
+}
+
+/* -------------------  Projetos --------------------- */
+#projetos {
+  background-color: blueviolet;
+}
+
+.box-experiencia {
+  width: 1136px;
+  margin: 0 auto;
+}
+
+.caixa-projetos {
+  background-color: aquamarine;
+}
+
+.imagem-projeto {
+  width: 752px;
+  height: auto;
+}
+
+/* -------------------  Projetos --------------------- */
 #contatos {
   background-color: #eaf2fd;
   padding-top: 150px;
 }
+
+.box-contatos {
+  background: #EAF2FD;
+  width: 1136px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-img {
+ display: block;
+
+}
+
+.img-contat {
+  width: 480px;
+  height: 590px;
+  display: grid;
+ }
+
+ .box-img a {
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(102, 71, 13);
+ }
+
+.box-form {
+  width: 656px;
+  height: 596px;
+  display: grid;
+}
+
+.topo {
+  display:block;
+  height: 100px;
+}
+
+.topo h2 {
+  text-align: left;
+  font-size: 26px;
+  font-weight: 600;
+  margin-left: 1rem;
+  padding-bottom: 15px;
+}
+.topo p {
+  text-align: left;
+  margin-left: 1em;
+  padding-bottom: 15px;
+  line-height: 21px;
+}
+
+.campo {
+  height: auto;
+  padding: 4px 10px;
+}
+
+form {
+  display: block;
+  
+}
+
+form label {
+  height: 40px;
+  display: block;
+  font-size: 14px;
+  padding: 15px 15px;
+  background: #fdfdfd;
+  color: rgb(68, 132, 250);
+  border-radius: 5px;
+  margin: 25px 0;
+  box-shadow: 3px 3px 11px 0 rgba(0, 0, 0, 0.459);
+}
+
+.input-padrao {
+  display: block;
+  font-size: 15px;
+  width: 100%;
+  height: 32px;
+  border: none;
+  
+}
+
+.input-text {
+  width: 100%;
+  border: none;
+  margin: 10px 0 ;
+  font-size: 15px;
+}
+
+.input-textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+
+}
+/* label text area*/
+.lbl-ta {
+  height: 100px;
+  display: block;
+  font-size: 14px;
+  padding: 15px 15px;
+  background: #fdfdfd;
+  color: rgb(68, 132, 250);
+  border-radius: 10px;
+  box-shadow: 3px 3px 11px 0 rgba(0, 0, 0, 0.459);
+  margin: 5px 0;
+}
+
+
+/* Retirar Borda do input*/
+.input-padrao:focus, .input-text:focus, .input-textarea:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0
+}
+
+.botao {
+  width: 160px;
+  height: 30px;
+  background-color: #ffffff; /* Green */
+  border: 1px solid green;
+  color: rgb(56, 139, 77);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+
+}
+
+.botao:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+
 /* FOOTER */
 footer {
   width:100%;
+  background: #765eff33;
   text-align: center;
   padding:50px 0px;
 }
