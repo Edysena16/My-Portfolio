@@ -12,7 +12,7 @@ section {
 }
 
 header {
-  background: #f5f5f5;
+  background: #dadada;
   min-height: 100vh;
 }
 
@@ -150,16 +150,16 @@ spam {
 }
 /*   CONTEUDO DO PERFIL   */
 
-h1 {
+.titulo-perfil {
   position: static;
   width: 751px;
   height: auto;
   padding: 1em 0;
 
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
-  font-size: 45px;
-  line-height: 50px;
+  font-size: 32px;
+  line-height: 45px;
 }
 
 p.apresentacao {
@@ -248,14 +248,14 @@ padding: 15px 30px 0 0;
 /* -------------------  SKILLS E HOBBIES --------------------- */
 
 #skills-hobbies {
-  background: #f5f5f5;
+  background: #dadada;
   width: 100%;
   height: 100vh;
   padding-top: 150px;
 }
 
 .container-hobbies {
-  background-color: #226fda27;
+  background-color: #ffffffbb;
   width: 100%;
   display: block;
   align-items: center;
@@ -407,8 +407,12 @@ form label {
   padding: 15px 15px;
   background: #fdfdfd;
   color: rgb(68, 132, 250);
-  border-radius: 5px;
+
   margin: 25px 0;
+
+  /* Estilizando a Borda*/
+  border-bottom: 2px solid red;
+  border-radius: 5px;
   box-shadow: 3px 3px 11px 0 rgba(0, 0, 0, 0.459);
 }
 
@@ -433,6 +437,8 @@ form label {
   border-radius: 5px;
   border: none;
   font-size: 15px;
+  /* Desabilitar ajuste de tamanho da caixa*/
+  resize: none;
 
 }
 /* label text area*/
@@ -459,8 +465,8 @@ form label {
   width: 160px;
   height: 30px;
   background-color: #ffffff; /* Green */
-  border: 1px solid green;
-  color: rgb(56, 139, 77);
+  border: 1px solid rgb(128, 0, 0);
+  color: rgb(243, 16, 16);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -472,7 +478,7 @@ form label {
 
 .botao:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  background-color: #4CAF50; /* Green */
+  background-color: #bb0e0e; /* Green */
   color: white;
 }
 
@@ -480,7 +486,9 @@ form label {
 /* FOOTER */
 footer {
   width:100%;
-  background: #765eff33;
+  background: #ebb5be;
   text-align: center;
   padding:50px 0px;
+
+  border-top: 2px solid red;
 }

@@ -38,11 +38,11 @@
       </div>
       <div class="perfil-principal box">
             <div class="box-perfil">
-              <h1 id="titulo-perfil">Olá, meu nome é Edvaldo Sena E construo páginas web</h1>
+              <h1 class="titulo-perfil">My name is Edvaldo Sena<br>I have 29 years old and i live in<br>Santa Catarina, Brazil.</h1>
               <p class="apresentacao">
-                Sou estudante do 3º Semestre de Ciência da Computacação - Unisul
+                I'm student of 3rd semester of Computer Sience in Unisul (Soulth University of Santa Catarina)
               <br>
-                E atualmente estou participando do projeto Oracle ONE na Alura.
+                And I'm currently participating in the Oracle ONE project at Alura.
               </p>
               <ul class="lista-perfil">
                 <li class="perfil-links">
@@ -213,20 +213,22 @@
               <div class="campo">
                 <form>
                   <label for="nome"
-                    >Nome<input type="text" placeholder="Ex: Fulano de tal" id="nome" class="input-padrao"
+                    >Nome<input type="text" placeholder="Ex: Fulano de tal" id="nome" class="input-padrao" required
                   /></label>
-                  <label for="email">E-mail<input type="email" id="email" placeholder="Ex: seu.email@dominio.com" class="input-padrao"/></label>
+                  <label for="email">E-mail<input type="email" id="email" placeholder="Ex: seu.email@dominio.com" class="input-padrao" required /></label>
                   <label for="assunto">
                     <input type="text" id="assunto" placeholder="Assunto" class="input-text"/>
                   </label>
     
                   <label class="lbl-ta" for="mensagem">
-                    <textarea placeholder="Mensagem" id="campo" cols="250" rows="6" class="input-textarea"></textarea>
+                    <textarea placeholder="Mensagem" id="campo" cols="250" rows="6" class="input-textarea" required></textarea>
                   </label>
+
+                  <input type="submit" value="Enviar Mensagem" class="botao"/>
                 </form>
               </div>
               
-              <button type="submit" class="botao">Enviar mensagem</button>
+              
             
             </div>
 
