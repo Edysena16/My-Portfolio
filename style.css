@@ -625,5 +625,11 @@ footer {
 footer p {
   color: #f9eafd;
   text-align: center;
-  margin-bottom: 30px;
+  
+}
+
+footer p spam {
+  font-style: italic;
+  font-weight: 600;
+  color: rgb(209, 181, 255);
 }
