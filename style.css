@@ -1,18 +1,23 @@
 * {
   margin: 0;
-  font-family: 'Releway';
+  font-family: 'Philosopher', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-section {
+
+.section {
+  background: linear-gradient( #f4eafd, #ffffff) ;
+  padding-top: 150px;
   min-height: 100vh;
+  border-top:2px dotted blueviolet;
+
 }
 
 header {
-  background: #dadada;
+  background: #f7f8f8;
   min-height: 100vh;
 }
 
@@ -43,7 +48,7 @@ h2 {
   background-color: #eaf2fd;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
   padding: 20px;
-
+  background: linear-gradient(rgb(102, 10, 105), rgba(122, 5, 102, 0.979));
 }
 
 
@@ -59,6 +64,7 @@ h2 {
 .logo a {
   text-decoration: none;
 }
+
 
 /*TOPO MENU CONFIGURAÇÕES*/
 
@@ -78,37 +84,37 @@ nav ul li {
   
   padding: 0 0 0 5px;
   margin-right: 5px;
+  color: #f2eef5;
 
 }
 
-nav ul li:hover {
-  text-shadow: 1px 1px 1px rgb(41, 38, 38);
-  
+.logo a spam:hover{
+  text-shadow: 1px 1px 5px rgb(197, 173, 207);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
 
 }
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(27, 72, 139);
+  color: rgb(225, 194, 255);
 }
 
-nav ul li a:hover, .logo a:hover{
+nav ul li a:hover, .logo a:hover, nav ul li:hover{
   font-weight: 500;
-  color: rgb(24, 81, 204);
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 5px rgb(197, 173, 207);
+  
 }
+
 spam {
   position: static;
   width: 102px;
   height: 19px;
-  left: 32px;
-  top: 2.5px;
 
-  font-family: 'Raleway';
- 
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16.5px;
+  color: rgb(243, 222, 253);
 
 }
 
@@ -118,6 +124,7 @@ spam {
   height: 24px;
   left: 0px;
   top: 0px;
+  border-radius: 50%;
 
 }
 
@@ -127,6 +134,7 @@ spam {
 
 
 .perfil-principal {
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -160,10 +168,14 @@ spam {
   font-style: normal;
   font-size: 32px;
   line-height: 45px;
+  color: rgba(158, 80, 182, 0.952);
+  text-shadow: 1px 1px 2px #264ea5bd;
 }
 
 p.apresentacao {
   margin: 15px 0;
+  color: rgb(92, 22, 158);
+  font-size: 15.4px;
 }
 
 .lista-perfil {
@@ -175,14 +187,25 @@ p.apresentacao {
 }
 
 .perfil-links {
-padding: 15px 30px 0 0;
+padding: 10px 25px 0 0;
+}
+
+.perfil-links img {
+  width: 20px;
+  height: 20px;
 }
 
 .lista {
   position: static;
   width: 50px;
   height: 19px;
- text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.lista:hover {
+  text-decoration: underline;
+  
 }
 
 #img-profile {
@@ -190,15 +213,16 @@ padding: 15px 30px 0 0;
   width: 25%;
   height: auto;
   border-radius: 50%;
-  
-  
+  border: 1px solid rgba(186, 15, 209, 0.562);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.459);
+  opacity: 100%;
   
 }
 
 /* SECTION SOBRE MIM  */
 
 #sobre-mim {
-  background-color: #EAF2FD;
+  background-color: #f4eafd;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,6 +248,8 @@ padding: 15px 30px 0 0;
 
 .box-sobre h2 {
   padding-top: 2em;
+  color: rgba(158, 80, 182, 0.952);
+  text-shadow: 1px 1px 2px #264ea5bd;
 }
 
 .box-sobre p{
@@ -237,6 +263,7 @@ padding: 15px 30px 0 0;
   line-height: 25px;
   padding-top: 2em;
   text-align:left;
+  color: rgb(32, 9, 46);
 }
 
 #assinatura {
@@ -248,22 +275,27 @@ padding: 15px 30px 0 0;
 /* -------------------  SKILLS E HOBBIES --------------------- */
 
 #skills-hobbies {
-  background: #dadada;
+
   width: 100%;
   height: 100vh;
   padding-top: 150px;
 }
 
 .container-hobbies {
-  background-color: #ffffffbb;
   width: 100%;
   display: block;
   align-items: center;
+  padding-bottom: 20px;
+
+  
+  /* border: 2px solid rgba(137, 43, 226, 0.774); */
 }
 
 .container-hobbies h2 {
 padding: 0em;
 margin-top: auto;
+color: rgba(158, 80, 182, 0.952);
+text-shadow: 1px 1px 2px #264ea5bd;
 }
 
 .box-align {
@@ -277,74 +309,163 @@ margin-top: auto;
  
   width: 150px;
   height: 150px;
-  background-color: aqua;
+  background-color: #f4eafd;
   margin: 10px;
-  box-shadow: 5px 5px 15px black;
+  box-shadow: 1px 1px 15px rgba(58, 57, 57, 0.342);
+
+  border-bottom: 1px solid rgba(137, 43, 226, 0.76);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
+.box-itens img {
+  width: 4rem;
+  height: auto;
+  padding: 20px;
+  
+}
 
 .box-itens p {
   text-align: center;
-  margin-top: 105px;
-
+  font-weight: 700;
+  color: blueviolet;
 }
 
 /* -------------------  FORMACAO --------------------- */
 
 
-.section {
-  background-color: #a442e6a9;
-  padding-top: 150px;
+.section h2 {
+  color: rgba(158, 80, 182, 0.952);
+  text-shadow: 1px 1px 2px #264ea5bd;
+  padding-bottom: 35px;
 
 }
 
-
 .box-fomacao {
-  background-color: rgba(71, 192, 40, 0.74);
+  
   display: flex;
   width: 80%;
+  height: auto;
   margin: 0 auto;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
  
  }
 
 .box-content {
-  width: 368px;
-  height: 347px;
-  background-color: aquamarine;
+  width: 300px;
+  height: 250px;
+  background-color: #f4eafd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 5px rgba(61, 60, 60, 0.363);
+  border-bottom: 2px solid rgba(154, 0, 185, 0.842);
+}
+
+.box-content img {
+  width: 220px;
+  height: 100px;
+  padding-bottom: 15px;
+}
+
+.box-content h4 {
+  font-weight: bolder;
+}
+
+.box-content h4, p {
+  
+  color: blueviolet;
+  padding: 5px;
 }
 
 /* -------------------  Projetos --------------------- */
-#projetos {
-  background-color: blueviolet;
-}
 
 .box-experiencia {
   width: 1136px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
 }
 
 .caixa-projetos {
-  background-color: aquamarine;
+  width: 80%;
+  height: 50%;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  padding: 50px 50px 50px 0px;
+}
+
+.link-projeto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  
+}
+
+.link-projeto h4 {
+  font-weight: 600;
+  margin: 5px;
+  color: blueviolet;
+}
+
+.items-button {
+  width: 150px;
+  height: 25px;
+  background: white;
+  color: blueviolet;
+  font-weight: 500;
+  margin: 5px;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
+
+}
+
+.items-button a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.items-button:hover,  .items-button a:hover{
+  text-decoration: underline;
+  background:blueviolet ;
+  color: white;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(186, 15, 209, 0.699);
 }
 
 .imagem-projeto {
-  width: 752px;
+  width: 550px;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px rgba(137, 43, 226, 0.651);
 }
 
-/* -------------------  Projetos --------------------- */
-#contatos {
-  background-color: #eaf2fd;
-  padding-top: 150px;
-}
+/* -------------------  Contatos --------------------- */
+
 
 .box-contatos {
-  background: #EAF2FD;
+  background: #f4eafd;
   width: 1136px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  border-radius: 15px;
+  border: 1px dashed rgba(128, 38, 212, 0.815);
 }
 
 .box-img {
@@ -353,16 +474,19 @@ margin-top: auto;
 }
 
 .img-contat {
-  width: 480px;
-  height: 590px;
+  width: 250px;
+  height: auto;
   display: grid;
+  border:2px solid rgba(154, 0, 185, 0.445);
+  border-radius: 15px;
+  margin: 150px 0px 0 50px ;
  }
 
  .box-img a {
   padding: 10px 0;
   text-decoration: none;
   font-size: 12px;
-  color: rgb(102, 71, 13);
+  color: rgb(132, 10, 163);
  }
 
 .box-form {
@@ -381,7 +505,8 @@ margin-top: auto;
   font-size: 26px;
   font-weight: 600;
   margin-left: 1rem;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  padding-top: 25px;
 }
 .topo p {
   text-align: left;
@@ -411,7 +536,7 @@ form label {
   margin: 25px 0;
 
   /* Estilizando a Borda*/
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid blueviolet;
   border-radius: 5px;
   box-shadow: 3px 3px 11px 0 rgba(0, 0, 0, 0.459);
 }
@@ -448,7 +573,7 @@ form label {
   font-size: 14px;
   padding: 15px 15px;
   background: #fdfdfd;
-  color: rgb(68, 132, 250);
+  color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 3px 3px 11px 0 rgba(0, 0, 0, 0.459);
   margin: 5px 0;
@@ -465,30 +590,40 @@ form label {
   width: 160px;
   height: 30px;
   background-color: #ffffff; /* Green */
-  border: 1px solid rgb(128, 0, 0);
-  color: rgb(243, 16, 16);
+  border: 1px solid rgb(98, 0, 128);
+  color: blueviolet;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
   margin-left: 10px;
+  border-radius: 5px;
 
 }
 
 .botao:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  background-color: #bb0e0e; /* Green */
+  background-color: rgb(154, 54, 247); /* Green */
   color: white;
+  
 }
 
 
 /* FOOTER */
 footer {
   width:100%;
-  background: #ebb5be;
   text-align: center;
   padding:50px 0px;
+  margin-top: 50px;
+  color: white;
+  border-top: 2px solid blueviolet;
+  background: linear-gradient(rgb(105, 10, 58), purple);
+  
+}
 
-  border-top: 2px solid red;
+footer p {
+  color: #f9eafd;
+  text-align: center;
+  margin-bottom: 30px;
 }
